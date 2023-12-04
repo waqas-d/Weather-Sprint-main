@@ -1,0 +1,98 @@
+body {
+    background-image: url('/assets/download.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.favCityBox {
+    background-color: #637C9D;
+    width: 200px;
+    height: 800px;
+    margin-left: 20px;
+    margin-top: -280px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.favTxtStyle {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+.lineBreak {
+    border: 1px solid black;
+}
+
+.searchBar {
+    text-align: center;
+    margin-top: 20px;
+}
+.searchBarStyle {
+    width: 500px;
+    height: 30px;
+    background-color: #637C9D;
+    border: none;
+    border-radius: 15px;
+}
+.weatherContent{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+.currWeathBox {
+    background-color: #637C9D;
+    width: 600px;
+    height: 200px;
+    margin-right: 300px;
+    margin-top: 150px;
+    margin-left: 80px;
+    border-radius: 15px;
+
+}
+.fiveDayWeathBox{
+    background-color: #637C9D;
+    width: 1136px;
+    height: 210px;
+    margin-right: 100px;
+    margin-top: 80px;
+    margin-left: -12px;
+    border-radius: 15px;
+
+}
+.cloudyIconImg {
+    width: 100px;
+    margin-left: 40px;
+}
+.sunnyIconImg{
+    width: 100px;
+    margin-left: 40px;
+}
+.clearNightIconImg {
+    width: 100px;
+    margin-left: 40px;
+}
+.partlyCloudyIconImg{
+    width: 100px;
+    margin-left: 40px;
+}
+
+.timeOrDate {
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 20px;
+    color: white;
+}
+.tempFarenheit{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 15px;
+    color: white;
+}
+.lowTempFarenheit{
+    margin-bottom: 100px;
+    text-align: center;
+    margin-right: 20px;
+    color: white;
+}
