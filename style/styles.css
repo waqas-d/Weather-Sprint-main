@@ -9,8 +9,8 @@ body {
     width: 200px;
     height: 800px;
     margin-left: 20px;
-    margin-top: -280px;
-    border-radius: 15px;
+    margin-top: -230px;
+    border-radius: 50px;
     border: 1px solid white;
 }
 
@@ -34,11 +34,11 @@ body {
     height: 30px;
     background-color: #637C9D;
     border: none;
-    border-radius: 15px;
+    border-radius: 50px;
 }
 .weatherContent{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     color: white;
 }
 .currWeathBox {
@@ -46,9 +46,9 @@ body {
     width: 600px;
     height: 200px;
     margin-right: 300px;
-    margin-top: 150px;
+    margin-top: 80px;
     margin-left: 80px;
-    border-radius: 15px;
+    border-radius: 50px;
 
 }
 .fiveDayWeathBox{
@@ -56,9 +56,9 @@ body {
     width: 1136px;
     height: 210px;
     margin-right: 100px;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: -12px;
-    border-radius: 15px;
+    border-radius: 50px;
 
 }
 .cloudyIconImg {
@@ -74,6 +74,14 @@ body {
     margin-left: 40px;
 }
 .partlyCloudyIconImg{
+    width: 100px;
+    margin-left: 40px;
+}
+.rainIconImg {
+    width: 100px;
+    margin-left: 40px;
+}
+.windyIconImg {
     width: 100px;
     margin-left: 40px;
 }
