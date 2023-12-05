@@ -35,7 +35,15 @@ body {
     background-color: #637C9D;
     border: none;
     border-radius: 50px;
+    padding: 0 10px;
 }
+input:focus::placeholder {
+    color: transparent;
+  }
+  ::placeholder {
+    text-align: center;
+    color: lightgray;
+  }
 .weatherContent{
     text-align: center;
     margin-top: 50px;
