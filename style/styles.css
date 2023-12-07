@@ -94,6 +94,27 @@ input:focus::placeholder {
     margin-left: 40px;
 }
 
+.d1TimeNowIconImg1 {
+    width: 100px;
+    margin-left: 40px;
+}
+.d1Time12pmIconImg2 {
+    width: 100px;
+    margin-left: 40px;
+}
+.d1Time3pmIconImg3 {
+    width: 100px;
+    margin-left: 40px;
+}
+.d1Time6pmIconImg4 {
+    width: 100px;
+    margin-left: 40px;
+}
+.d1Time9pmIconImg5 {
+    width: 100px;
+    margin-left: 40px;
+}
+
 .timeOrDate {
     text-align: center;
     margin-top: 15px;
