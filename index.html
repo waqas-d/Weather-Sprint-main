@@ -9,15 +9,16 @@
     
 </head>
   <body>
+
     <div class="searchBar">
-        <input class="searchBarStyle" type="text" placeholder="Search City">
+        <input id="nameInput" class="searchBarStyle" type="text" placeholder="Search City" ><img id="heartIcon" src="./assets/heartIcon.png" alt="Heart Icon">
     </div>
     <div class="weatherContent">
-        <h4 class="time">00:00</h4>
-        <h4 class="standardTemp">50°F</h4>
-        <h4 class="iconDescription">Mostly Cloudy</h4>
-        <h4 class="highTemp">H:60°F </h4>
-        <h4 class="lowTemp">L:39°F </h4>
+        <h4 id="time">00:00</h4>
+        <h4 id="standardTemp">50°F</h4>
+        <h4 id="iconDescription">Mostly Cloudy</h4>
+        <h4 id="highTemp">H:60°F </h4>
+        <h4 id="lowTemp">L:39°F </h4>
         
     </div>
    
@@ -27,6 +28,22 @@
         <div class="col-4 favCityBox">
             <h1 class="favTxtStyle">Favorite Cities</h1>
             <hr class="lineBreak">
+            <h6 id="favorites1" ><span>Stockton</span><img id="heartIcon" src="./assets/heartIcon.png" alt="Heart Icon"></h6>
+            <ul>
+                <li id="favorites2"></li>
+                <li id="favorites3"></li>
+                <li id="favorites4"></li>
+                <li id="favorites5"></li>
+                <li id="favorites6"></li>
+                <li id="favorites7"></li>
+                <li id="favorites8"></li>
+                <li id="favorites9"></li>
+                <li id="favorites10"></li>
+                <li id="favorites11"></li>
+                <li id="favorites12"></li>
+                <li id="favorites13"></li>
+                <li id="favorites14"></li>
+            </ul>
         </div>
         <div class="col currWeathBox">
             <div class="row">
@@ -55,7 +72,7 @@
 
             <div class="fiveDayWeathBox">
                 <div class="row">
-                    <div class="col"><h6 class="timeOrDate">Today</h6>
+                    <div class="col"><h6 id="firstDay" class="timeOrDate">Today</h6>
                         <img id="day1" class="sunnyIconImg" src="./assets/sunnyIcon.png" alt="This is a weather icon that represents a clear sunny day.">
                         <h6 id="d1HighTemp" class="tempFarenheit">H:61°F</h6>
                         <h6 id="d1LowTemp" class="lowTempFarenheit">L:39°F</h6>
@@ -87,7 +104,6 @@
        
     </div>
    
-
 
 
 

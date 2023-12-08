@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Weather Sprint</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/styles.css">
     
 </head>
   <body>
     <div class="searchBar">
-        <input class="searchBarStyle" type="text">
+        <input id="nameInput" class="searchBarStyle" type="text" placeholder="Search City" ><img id="heartIcon" src="./assets/heartIcon.png" alt="Heart Icon">
     </div>
     <div class="weatherContent">
-        <h4>00:00</h4>
-        <h4>73°F</h4>
-        <h4>Rain</h4>
-        <h4>H:78°F L:69°F</h4>
+        <h4 id="time">00:00</h4>
+        <h4 id="standardTemp">50°F</h4>
+        <h4 id="iconDescription">Mostly Cloudy</h4>
+        <h4 id="highTemp">H:60°F </h4>
+        <h4 id="lowTemp">L:39°F </h4>
+        
     </div>
    
 
@@ -25,28 +27,30 @@
         <div class="col-4 favCityBox">
             <h1 class="favTxtStyle">Favorite Cities</h1>
             <hr class="lineBreak">
+            <h6 id="favorites" >Stockton</h6>
+            <h6 id="favorites" >Honolulu</h6>
         </div>
         <div class="col currWeathBox">
             <div class="row">
                 <div class="col"><h6 class="timeOrDate">Now</h6>
-                    <img class="rainIconImg" src="./assets/rainIcon.png" alt="This is a weather icon that represents a rainy day.">
-                    <h6 class="tempFarenheit">73°F</h6>
+                    <img id="d1TimeNow" class="d1TimeNowIconImg1" src="./assets/mostlyCloudy.png" alt="This is a weather icon that represents a cloudy day.">
+                    <h6 id="d1TimeNowHighTemp" class="tempFarenheit">52°F</h6>
                 </div>
-                <div class="col"><h6 class="timeOrDate">11am</h6>
-                    <img class="cloudyIconImg" src="./assets/mostlyCloudy.png" alt="This is a weather icon that represents a mostly cloudy day.">
-                    <h6 class="tempFarenheit">77°F</h6>
-                </div>
-                <div class="col"><h6 class="timeOrDate">1pm</h6>
-                    <img class="cloudyIconImg" src="./assets/mostlyCloudy.png" alt="This is a weather icon that represents a mostly cloudy day.">
-                    <h6 class="tempFarenheit">79°F</h6>
+                <div class="col"><h6 class="timeOrDate">12pm</h6>
+                    <img id="d1Time12pm" class="d1Time12pmIconImg2" src="./assets/sunnyIcon.png" alt="This is a weather icon that represents a clear sunny day.">
+                    <h6 id="d1Time12pmHighTemp" class="tempFarenheit">55°F</h6>
                 </div>
                 <div class="col"><h6 class="timeOrDate">3pm</h6>
-                    <img class="rainIconImg" src="./assets/rainIcon.png" alt="This is a weather icon that represents a rainy day.">
-                    <h6 class="tempFarenheit">78°F</h6>
+                    <img id="d1Time3pm" class="d1Time3pmIconImg3" src="./assets/sunnyIcon.png" alt="This is a weather icon that represents a clear sunny day.">
+                    <h6 id="d1Time3pmHighTemp" class="tempFarenheit">61°F</h6>
+                </div>
+                <div class="col"><h6 class="timeOrDate">6pm</h6>
+                    <img id="d1Time6pm" class="d1Time6pmIconImg4" src="./assets/clearNight.png" alt="This is a weather icon that represents a clear sky at night.">
+                    <h6 id="d1Time6pmHighTemp" class="tempFarenheit">53°F</h6>
                 </div>
                 <div class="col"><h6 class="timeOrDate">9pm</h6>
-                    <img class="cloudyIconImg" src="./assets/mostlyCloudy.png" alt="This is a weather icon that represents a mostly cloudy day.">
-                    <h6 class="tempFarenheit">76°F</h6>
+                    <img id="d1Time9pm" class="d1Time9pmIconImg5" src="./assets/clearNight.png" alt="This is a weather icon that represents a clear sky at night.">
+                    <h6 id="d1Time9pmHighTemp" class="tempFarenheit">48°F</h6>
                 </div>
             </div>
            
@@ -54,29 +58,29 @@
             <div class="fiveDayWeathBox">
                 <div class="row">
                     <div class="col"><h6 class="timeOrDate">Today</h6>
-                        <img class="rainIconImg" src="./assets/rainIcon.png" alt="This is a weather icon that represents a rainy day.">
-                        <h6 class="tempFarenheit">H:78°F</h6>
-                        <h6 class="lowTempFarenheit">L:69°F</h6>
+                        <img id="day1" class="sunnyIconImg" src="./assets/sunnyIcon.png" alt="This is a weather icon that represents a clear sunny day.">
+                        <h6 id="d1HighTemp" class="tempFarenheit">H:61°F</h6>
+                        <h6 id="d1LowTemp" class="lowTempFarenheit">L:39°F</h6>
+                    </div>
+                    <div class="col"><h6 class="timeOrDate">Thu</h6>
+                        <img id="day2" class="partlyCloudyIconImg" src="./assets/partlyCloudy.png" alt="This is a weather icon that represents a partly cloudy day.">
+                        <h6 id="d2HighTemp"  class="tempFarenheit">H:62°F</h6>
+                        <h6 id="d2LowTemp" class="lowTempFarenheit">L:41°F</h6>
+                    </div>
+                    <div class="col"><h6 class="timeOrDate">Fri</h6>
+                        <img id="day3" class="partlyCloudyIconImg" src="./assets/partlyCloudy.png" alt="This is a weather icon that represents a partly cloudy day.">
+                        <h6 id="d3HighTemp"class="tempFarenheit">H:60°F</h6>
+                        <h6 id="d3LowTemp" class="lowTempFarenheit">L:42°F</h6>
                     </div>
                     <div class="col"><h6 class="timeOrDate">Sat</h6>
-                        <img class="partlyCloudyIconImg" src="./assets/partlyCloudy.png" alt="This is a weather icon that represents a partly cloudy day.">
-                        <h6 class="tempFarenheit">H:71°F</h6>
-                        <h6 class="lowTempFarenheit">L:60°F</h6>
+                        <img id="day4" class="cloudyIconImg" src="./assets/mostlyCloudy.png" alt="This is a weather icon that represents a cloudy day.">
+                        <h6 id="d4HighTemp" class="tempFarenheit">H:61°F</h6>
+                        <h6 id="d4LowTemp" class="lowTempFarenheit">L:45°F</h6>
                     </div>
                     <div class="col"><h6 class="timeOrDate">Sun</h6>
-                        <img class="sunnyIconImg" src="./assets/sunnyIcon.png" alt="This is a weather icon that represents a sunny day.">
-                        <h6 class="tempFarenheit">H:80°F</h6>
-                        <h6 class="lowTempFarenheit">L:72°F</h6>
-                    </div>
-                    <div class="col"><h6 class="timeOrDate">Mon</h6>
-                        <img class="sunnyIconImg" src="./assets/sunnyIcon.png" alt="This is a weather icon that represents a sunny day.">
-                        <h6 class="tempFarenheit">H:72°F</h6>
-                        <h6 class="lowTempFarenheit">L:60°F</h6>
-                    </div>
-                    <div class="col"><h6 class="timeOrDate">Tue</h6>
-                        <img class="windyIconImg" src="./assets/windyIcon.png" alt="This is a weather icon that represents a windy day.">
-                        <h6 class="tempFarenheit">H:79°F</h6>
-                        <h6 class="lowTempFarenheit">L:72°F</h6>
+                        <img id="day5" class="cloudyIconImg" src="./assets/mostlyCloudy.png" alt="This is a weather icon that represents a cloudy day.">
+                        <h6 id="d5HighTemp" class="tempFarenheit">H:65°F</h6>
+                        <h6 id="d5LowTemp" class="lowTempFarenheit">L:45°F</h6>
                     </div>
                 </div> 
               </div>
